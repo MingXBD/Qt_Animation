@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/button3.png</file>
+        <file>res/glass.png</file>
+        <file>res/pigbut.png</file>
+        <file>res/testvideo.avi</file>
+    </qresource>
+</RCC>
