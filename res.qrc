@@ -4,5 +4,8 @@
         <file>res/glass.png</file>
         <file>res/pigbut.png</file>
         <file>res/testvideo.avi</file>
+        <file>res/background.jpg</file>
+        <file>res/block.png</file>
+        <file>res/pointer.png</file>
     </qresource>
 </RCC>
