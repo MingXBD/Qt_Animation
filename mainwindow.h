@@ -25,8 +25,12 @@ class MainWindow : public QMainWindow
 
     MovingLabel* LabelHead;
     MovingLabel* SpawnTem;
+    MovingLabel* GiftHead;
+    MovingLabel* GiftTem;
     MovingLabel* pointer;
-    MovingLabel* select=nullptr;
+    MovingLabel* select;
+    MovingLabel* Giftselect;
+    MovingLabel* InfoBoard;
 
     int ntime;
     int GlobalTimer;
@@ -40,18 +44,26 @@ class MainWindow : public QMainWindow
 
     int stunum;
     QString names[1000];
-    int randomno[1000];
     int GlobalCounter;
+
+    int giftnum;
+    QString giftaddr[100];
+    QString giftoraddr[100];
+    QString giftInfo[100];
+    int GiftCounter;
+    double GiftDistence;
 
     QPushButton* But_slow;
     QPushButton* But_reset;
     QPushButton* But_fps;
+    QPushButton* But_next;
 
     void timerEvent(QTimerEvent *);
 public:
     explicit MainWindow(QWidget *parent = 0);
 
     void reset();
+    void nextgift();
     void getresult();
     void loaddata();
     void changeFps();

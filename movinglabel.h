@@ -17,6 +17,8 @@ public:
 
     MovingLabel* next;
 
+    QString OriInfo;
+
     void setX(double nx);
     void setY(double ny);
     void setXY(double nx,double ny);
@@ -48,6 +50,9 @@ public:
 
     void slowdown(double timepass);
     void stop();
+    void sizestop();
+    void movetoX(double tx, double timepass);
+    void movetoY(double ty, double timepass);
     void update(double timepass);
 
     void copy(MovingLabel* target);

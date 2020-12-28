@@ -1,11 +1,19 @@
 <RCC>
     <qresource prefix="/">
         <file>res/button3.png</file>
-        <file>res/glass.png</file>
-        <file>res/pigbut.png</file>
         <file>res/testvideo.avi</file>
         <file>res/background.jpg</file>
         <file>res/block.png</file>
         <file>res/pointer.png</file>
+        <file>res/food1.jpg</file>
+        <file>res/food2.jpg</file>
+        <file>res/food3.jpg</file>
+        <file>res/food4.jpg</file>
+        <file>res/growhair.jpg</file>
+        <file>res/hammer.jpg</file>
+        <file>res/head.jpg</file>
+        <file>res/Humidifier.jpg</file>
+        <file>res/milktea.png</file>
+        <file>res/happy.jpg</file>
     </qresource>
 </RCC>

@@ -185,6 +185,52 @@ void MovingLabel::stop()
     a_h=0;
 }
 
+void MovingLabel::sizestop()
+{
+    v_w=0;
+    v_h=0;
+    a_w=0;
+    a_h=0;
+}
+
+void MovingLabel::movetoX(double tx, double timepass)
+{
+    v_x+=a_x*timepass;
+    v_y+=a_y*timepass;
+    v_w+=a_w*timepass;
+    v_h+=a_h*timepass;
+
+    if((tx-x)*(tx-x-v_x*timepass)<=0)
+        x=tx,v_x=0,a_x=0;
+    else
+        x+=v_x*timepass;
+
+    y+=v_y*timepass;
+    w+=v_w*timepass;
+    h+=v_h*timepass;
+    if(label!=nullptr)
+        label->setGeometry(int(x-w/2),int(y-h/2),int(w),int(h));
+}
+
+void MovingLabel::movetoY(double ty,double timepass)
+{
+    v_x+=a_x*timepass;
+    v_y+=a_y*timepass;
+    v_w+=a_w*timepass;
+    v_h+=a_h*timepass;
+
+    if((ty-y)*(ty-y-v_y*timepass)<=0)
+        y=ty,v_y=0,a_y=0;
+    else
+        y+=v_y*timepass;
+
+    x+=v_x*timepass;
+    w+=v_w*timepass;
+    h+=v_h*timepass;
+    if(label!=nullptr)
+        label->setGeometry(int(x-w/2),int(y-h/2),int(w),int(h));
+}
+
 void MovingLabel::update(double timepass)
 {
     v_x+=a_x*timepass;
